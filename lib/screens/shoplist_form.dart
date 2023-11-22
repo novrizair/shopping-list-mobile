@@ -1,3 +1,5 @@
+// ignore_for_file: use_build_context_synchronously
+
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
@@ -72,7 +74,6 @@ class _ShopFormPageState extends State<ShopFormPage> {
                       borderRadius: BorderRadius.circular(5.0),
                     ),
                   ),
-                  // TODO: Tambahkan variabel yang sesuai
                   onChanged: (String? value) {
                     setState(() {
                       _price = int.parse(value!);
@@ -101,7 +102,6 @@ class _ShopFormPageState extends State<ShopFormPage> {
                   ),
                   onChanged: (String? value) {
                     setState(() {
-                      // TODO: Tambahkan variabel yang sesuai
                       _description = value!;
                     });
                   },

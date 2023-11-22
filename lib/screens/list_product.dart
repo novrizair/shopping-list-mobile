@@ -8,6 +8,7 @@ class ProductPage extends StatefulWidget {
     const ProductPage({Key? key}) : super(key: key);
 
     @override
+    // ignore: library_private_types_in_public_api
     _ProductPageState createState() => _ProductPageState();
 }
 
@@ -24,6 +25,7 @@ Future<List<Product>> fetchProduct() async {
     var data = jsonDecode(utf8.decode(response.bodyBytes));
 
     // melakukan konversi data json menjadi object Product
+    // ignore: non_constant_identifier_names
     List<Product> list_product = [];
     for (var d in data) {
         if (d != null) {
